@@ -20,15 +20,15 @@ class Product {
     }
 
     function toString() {
-        return 'Product { '
-            .'id: ' .$this->id
-            .', description : ' .$this->description
-            .', brand : ' .$this->brand
-            .', price : ' .$this->price
-            .', stock : ' .$this->stock
-            .', warranty : ' .$this->warranty
-            .', active : ' .$this->is_active.
-        ' }';
+        return "
+            id => {$this->id}, 
+            description => {$this->description}, 
+            brand => {$this->brand}, 
+            price => {$this->price}, 
+            stock => {$this->stock}, 
+            warranty => {$this->warranty}, 
+            active => {$this->is_active}
+        ";
     }
 }
 

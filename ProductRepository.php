@@ -9,10 +9,9 @@ class ProductRepository {
             $username = 'root';
             $password = 'root';
             $database = 'myproductstestdb';
-            self::$pdo = new PDO('mysql:host=localhost;dbname='.$database, $username, $password);
+            self::$pdo = new PDO("mysql:host=localhost;dbname={$database}", $username, $password);
             // Configuração para exibir os erros
             self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
         }
         catch(PDOException $e) {
             echo "Error: {$e->getMessage()}";
