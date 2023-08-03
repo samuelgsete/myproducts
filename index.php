@@ -56,6 +56,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
 
             * {
                 margin: 0;
@@ -111,6 +112,14 @@
 
             table tr th {
                 text-transform: uppercase;
+            }
+
+            table tr td {
+                font-family: 'Hind Siliguri', sans-serif;
+            }
+
+            table tr td:first-child {
+                font-weight: 600;
             }
 
             .input-search {
